@@ -1,0 +1,50 @@
+.nav-box {
+    border: solid rgb(28, 28, 28) 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 50px 10px 50px;
+    height: 200px;
+    background-color: rgb(236, 236, 236);;
+}
+
+.nav-graphic {
+    width: 100px;
+    height: 100px;
+    padding: 30px 0px 0px 30px;
+}
+
+.nav-label {
+    font-size: 24px;
+    align-content: center;
+    text-align: center;
+    padding: 10px 40px 0px 0px;
+    color: rgb(28, 28, 28);;
+    
+}
+
+.nav-button {
+    text-align: right;
+    width: 100%;
+    padding-left: 105px;
+    font-weight: 50px;
+    font-style: bold;
+    color: rgb(28, 28, 28);;
+}
+
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+.nav-box:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 0px rgb(213, 0, 0);
+    .nav-graphic {
+        animation: bounce 0.5s ease infinite
+    }
+    .nav-button {
+        color: rgb(213, 0, 0);
+        transition: background-color 0.3s ease-in-out;
+    }
+}

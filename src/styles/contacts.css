@@ -1,0 +1,19 @@
+.contacts-box {
+    background-color: rgb(195, 195, 195);
+    border-radius: 20px;
+    border: solid rgb(28, 28, 28) 5px;
+    margin: 30px 10px 30px 10px;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 2fr;
+    align-items: center;
+    width: 350px;
+    color: rgb(28, 28, 28);
+}
+
+.contacts-title {
+    font-weight: bold;
+}
+
+.contacts-box:hover {
+    background-color: white
+}
