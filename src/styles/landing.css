@@ -2,6 +2,7 @@
 
 .body {
   font-family: 'Outfit';
+  background-color: white;
 }
 
 .header {
@@ -14,7 +15,7 @@
   background-color: rgb(28, 28, 28);
   color: white;
   height: 100%;
-  padding: 1px;
+  padding: 50px;
   width: 1070px;
 }
 
@@ -46,11 +47,16 @@
   color: white;
   width: 835px;
   height: 91vh;
-  padding: 0px 20px 0px 20px;
+  padding: 50px 20px 0px 20px;
   background:
   linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
   url("https://photos.zillowstatic.com/fp/842bdc9318c7b2909f230b2ab7c9c9e9-uncropped_scaled_within_1536_1152.webp");
   background-size: cover;
+}
+
+.about-text h1 {
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 .about-text p {
@@ -59,7 +65,7 @@
 
 .contacts-container {
   background-color: rgb(213, 0, 0);
-  padding: 0.1px 0.1px 10px 5px;
+  padding: 50px 0.1px 10px 5px;
 }
 
 .contacts-container h2 {
@@ -73,7 +79,7 @@
 .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  color: rgb(28, 28, 28);;
+  color: rgb(28, 28, 28);
 }
 
 .info-title {
@@ -82,6 +88,7 @@
   font-weight: bolder;
   margin-top: 40px;
   font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .info-blank {
@@ -91,21 +98,16 @@
 
 .info-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 30px;
-}
-
-.works h2 {
-  padding-left: 20px;
-  color: rgb(28, 28, 28);
-  font-weight: bolder;
-  font-size: 30px;
-  margin-top: 40px;
+  justify-items: center;
 }
 
 .works-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 80px;
 }
 
 .footer {

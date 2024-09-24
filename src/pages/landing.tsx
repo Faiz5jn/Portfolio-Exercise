@@ -29,37 +29,27 @@ let contactData = [
 
 let navData = [
   {
-    graphic: "https://img.icons8.com/?size=100&id=SCQVeCkY6ZWr&format=png&color=12B886",
-    label: "Education",
-    page: "education"
-  },
-  {
-    graphic: "https://img.icons8.com/?size=100&id=cr6sAKmahoTM&format=png&color=12B886",
-    label: "Experiences",
-    page: "experiences"
-  },
-  {
-    graphic: "https://img.icons8.com/?size=100&id=N1zuNYvg2yRS&format=png&color=12B886",
-    label: "Skillsets",
-    page: "skillsets"
-  }
-]
-
-let navData2 = [
-  {
-    graphic: "https://img.icons8.com/?size=100&id=8GwnEk6qzFmi&format=png&color=FD7E14",
+    graphic: "https://img.icons8.com/?size=100&id=8GwnEk6qzFmi&format=png&color=12B886",
     label: "Web Design",
     page: "webdesign"
   },
   {
-    graphic: "https://img.icons8.com/?size=100&id=bIzkj9TUyWuU&format=png&color=FD7E14",
-    label: "Software Development",
-    page: "softwaredevelopment"
+    graphic: "https://img.icons8.com/?size=100&id=bIzkj9TUyWuU&format=png&color=12B886",
+    label: "Algorithm Programs",
+    page: "algorithms"
   },
+]
+
+let navData2 = [
   {
     graphic: "https://img.icons8.com/?size=100&id=0PvyMNdcAPot&format=png&color=FD7E14",
     label: "Other Projects",
-    page: "otherprojects"
+    page: "others"
+  },
+  {
+    graphic: "https://img.icons8.com/?size=100&id=82464&format=png&color=FD7E14",
+    label: "Personal Blog",
+    page: "blog"
   }
 ]
 
@@ -79,7 +69,7 @@ function Landing() {
       <div className="about">
         <div className="about-text">
           <h1>About Me</h1>
-          <p>Hello there! Let me reintroduce myself. My name is Muhammad Faiz Fanandi and I am currently studying to become a full stack web developer.
+          <p>Hello there, my name is Muhammad Faiz Fanandi and I am currently studying full stack web development.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
             Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -94,7 +84,6 @@ function Landing() {
       </div>
       <div className="info">
         <div className="info-title">
-          <h2>General Info:</h2>
         </div>
         <div className="info-blank">
         </div>
@@ -111,7 +100,6 @@ function Landing() {
           })}
       </div>
       <div className="works">
-        <h2>Past Works:</h2>
         <div className="works-container">
           {navData2.map((item: NavProps) => {
             return (<NavComponent 
