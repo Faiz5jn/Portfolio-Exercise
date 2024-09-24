@@ -39,8 +39,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .nav-box {
-        width: 320px;
-        margin-left: 30px;
+    .nav-label {
+        font-size: 30px;
     }
 }

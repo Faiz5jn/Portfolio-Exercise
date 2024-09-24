@@ -121,27 +121,32 @@
 
 @media only screen and (max-width: 600px) {
   .body {
-    width: 375.8px;
+    width: 570px;
   }
   .header {
     grid-template-columns: repeat(1, 1fr);
   }
   .header-text {
-    width: 99.5%;
+    width: 100%;
   }
   .about {
     grid-template-columns: repeat(1, 1fr);
   }
   .about-text {
-    width: 89.4%;
+    width: 100%;
     border-top: 10px solid rgb(213, 0, 0);
+    height: auto;
+    padding-bottom: 50px;
   }
   .about-text p {
     font-size: 15px;
   }
   .contacts-container {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%px;
+    width: 100%;
+    padding-left: 110px;
+  }
+  .contacts-container h2 {
+    padding-right: 90px;
   }
   .info {
     grid-template-columns: repeat(1, 1fr);
@@ -151,11 +156,11 @@
     width: 100px;
   }
   .info-container {
-    width: 100px;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .works-container {
     grid-template-columns: repeat(1, 1fr);
-    width: 100px;
+    width: 100%;
   }
 }
