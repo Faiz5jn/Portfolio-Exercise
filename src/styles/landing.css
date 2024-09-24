@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.body {
+  font-family: 'Outfit';
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.header-text {
+  text-align: center;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  height: 100%;
+  padding: 1px;
+  width: 1070px;
+}
+
+.header-text h2 {
+  margin-top: 40px;
+}
+
+.header-text b {
+  font-size: 50px;
+}
+
+.header-blank {
+  background-color: rgb(28, 28, 28);
+  border-left: solid 10px rgb(213, 0, 0);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-text {
+  color: white;
+  width: 835px;
+  height: 91vh;
+  padding: 0px 20px 0px 20px;
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("https://photos.zillowstatic.com/fp/842bdc9318c7b2909f230b2ab7c9c9e9-uncropped_scaled_within_1536_1152.webp");
+  background-size: cover;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+
+.contacts-container {
+  background-color: rgb(213, 0, 0);
+  padding: 0.1px 0.1px 10px 5px;
+}
+
+.contacts-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgb(28, 28, 28);;
+}
+
+.info-title {
+  width: 1070px;
+  padding-left: 20px;
+}
+
+.info-blank {
+  border-left: solid 10px rgb(213, 0, 0);
+  border-bottom: solid 10px rgb(213, 0, 0);
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+
+.works h2 {
+  padding-left: 20px;
+  color: rgb(28, 28, 28);
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  padding: 1px;
+  border-top: solid 10px rgb(213, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    width: 375.8px;
+  }
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-text {
+    width: 99.5%;
+  }
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-text {
+    width: 89.4%;
+    border-top: 10px solid rgb(213, 0, 0);
+  }
+  .about-text p {
+    font-size: 15px;
+  }
+  .contacts-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%px;
+  }
+  .info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info-blank {
+    border-color: rgba(255, 0, 0, 0);
+    width: 100px;
+  }
+  .info-container {
+    width: 100px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .works-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100px;
+  }
+}
