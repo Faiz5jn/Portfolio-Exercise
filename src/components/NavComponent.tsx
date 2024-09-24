@@ -3,12 +3,14 @@ import "../styles/nav.css"
 export interface NavProps {
     graphic: string;
     label: string;
+    page?: string
+    onClick?: () => void;
 }
 
-function NavComponent({graphic, label}: NavProps) {
+function NavComponent({graphic, label, page, onClick}: NavProps) {
   return (
-    <div className="nav-box">
-        <img src={graphic} alt={label} className="nav-graphic"/>
+    <div className="nav-box" onClick={onClick}>
+        <img src={graphic} alt={page} className="nav-graphic"/>
         <p className="nav-label"><b>{label}</b></p>
         <p className="nav-button">
             <b><u>Learn More</u></b>

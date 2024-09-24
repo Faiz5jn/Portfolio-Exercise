@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import ContactComponent, {ContactProps} from "../components/ContactComponent";
 import NavComponent, {NavProps} from "../components/NavComponent";
 import "../styles/landing.css"
@@ -29,34 +30,42 @@ let contactData = [
 let navData = [
   {
     graphic: "https://img.icons8.com/?size=100&id=SCQVeCkY6ZWr&format=png&color=12B886",
-    label: "Education"
+    label: "Education",
+    page: "education"
   },
   {
     graphic: "https://img.icons8.com/?size=100&id=cr6sAKmahoTM&format=png&color=12B886",
-    label: "Experiences"
+    label: "Experiences",
+    page: "experiences"
   },
   {
     graphic: "https://img.icons8.com/?size=100&id=N1zuNYvg2yRS&format=png&color=12B886",
-    label: "Skillsets"
+    label: "Skillsets",
+    page: "skillsets"
   }
 ]
 
 let navData2 = [
   {
     graphic: "https://img.icons8.com/?size=100&id=8GwnEk6qzFmi&format=png&color=FD7E14",
-    label: "Web Design"
+    label: "Web Design",
+    page: "webdesign"
   },
   {
     graphic: "https://img.icons8.com/?size=100&id=bIzkj9TUyWuU&format=png&color=FD7E14",
-    label: "Software Development"
+    label: "Software Development",
+    page: "softwaredevelopment"
   },
   {
     graphic: "https://img.icons8.com/?size=100&id=0PvyMNdcAPot&format=png&color=FD7E14",
-    label: "Other Projects"
+    label: "Other Projects",
+    page: "otherprojects"
   }
 ]
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
     <div className="body">
       <div className="header">
@@ -92,14 +101,26 @@ function Landing() {
       </div>
       <div className="info-container">
         {navData.map((item: NavProps) => {
-          return (<NavComponent graphic={item.graphic} label={item.label}/>);
+          return (<NavComponent 
+            graphic={item.graphic} 
+            label={item.label}
+            onClick={() =>
+              navigate("/" + item.page)
+            }
+            />);
           })}
       </div>
       <div className="works">
         <h2>Past Works:</h2>
         <div className="works-container">
           {navData2.map((item: NavProps) => {
-            return (<NavComponent graphic={item.graphic} label={item.label}/>);
+            return (<NavComponent 
+              graphic={item.graphic} 
+              label={item.label}
+              onClick={() =>
+                navigate("/" + item.page)
+              }
+              />);
             })}
         </div>
       </div>
