@@ -18,8 +18,14 @@
   width: 1070px;
 }
 
+.header-text h1 {
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
 .header-text h2 {
   margin-top: 40px;
+  font-size: 20px;
 }
 
 .header-text b {
@@ -59,6 +65,9 @@
 .contacts-container h2 {
   text-align: center;
   color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 10px;
 }
 
 .info {
@@ -70,6 +79,9 @@
 .info-title {
   width: 1070px;
   padding-left: 20px;
+  font-weight: bolder;
+  margin-top: 40px;
+  font-size: 30px;
 }
 
 .info-blank {
@@ -86,6 +98,9 @@
 .works h2 {
   padding-left: 20px;
   color: rgb(28, 28, 28);
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 40px;
 }
 
 .works-container {
@@ -96,7 +111,7 @@
 .footer {
   background-color: rgb(28, 28, 28);
   color: white;
-  padding: 1px;
+  padding: 20px;
   border-top: solid 10px rgb(213, 0, 0);
   margin-top: 50px;
   text-align: center;

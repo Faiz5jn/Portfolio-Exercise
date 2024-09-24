@@ -12,9 +12,6 @@ function NavComponent({graphic, label, page, onClick}: NavProps) {
     <div className="nav-box" onClick={onClick}>
         <img src={graphic} alt={page} className="nav-graphic"/>
         <p className="nav-label"><b>{label}</b></p>
-        <p className="nav-button">
-            <b><u>Learn More</u></b>
-        </p>
     </div>
   )
 }

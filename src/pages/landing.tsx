@@ -7,22 +7,22 @@ import "../styles/landing.css"
 let contactData = [
   {
     title: "Whatsapp:",
-    details: "+61 488 901 241",
+    details: "+61 234 567 890",
     icon: "https://img.icons8.com/color/48/000000/whatsapp.png"
   },
   {
     title: "Email:",
-    details: "fjnyuei7@gmail.com",
+    details: "faizfanandi@email.com",
     icon: "https://img.icons8.com/color/48/000000/email.png"
   },
   {
     title: "Instagram:",
-    details: "@fjnyuei",
+    details: "@instagram",
     icon: "https://img.icons8.com/color/48/000000/instagram.png"
   },
   {
     title: "GitHub:",
-    details: "https://github.com/Faiz5jn",
+    details: "https://github.com/",
     icon: "https://img.icons8.com/color/48/000000/github.png"
   }
 ]
