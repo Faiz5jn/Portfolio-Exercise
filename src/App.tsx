@@ -62,7 +62,7 @@ function App() {
       <div className="header">
         <div className="header-text">
           <h1>Welcome!</h1>
-          <h2>This is the personal webpage of:<br/><b>Muhammad Faiz Fanandi</b></h2>
+          <h2>This is the personal webpage of<br/><b>Muhammad Faiz Fanandi</b></h2>
         </div>
         <div className="header-blank">
         </div>
